@@ -58,16 +58,16 @@ form {
 }
 
 .right {
-    width: 100%;  
-    max-width: 400px;  
+    width: 100%;
+    max-width: 400px;
 }
 
 /* Estilos do Formulário */
 form {
     background-color: white;
     border-radius: 8px;
-    width: 100%;  
-    max-width: 400px;  
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -98,7 +98,7 @@ form input {
     font-size: 20px;
     font-weight: 700;
     transition: 0.5s;
-    cursor: pointer;  
+    cursor: pointer;
     width: 100%;
 }
 
@@ -146,22 +146,35 @@ form input {
     font-size: 14px;
     font-weight: normal;
     padding-top: 0;
+    text-align: center;  
 }
 
 /* Estilos Responsivos */
 @media (max-width: 950px) {
     .container {
         flex-direction: column;
+        width: 75%;
+        height: 55%;
     }
 
     .left {
-        width: 100%;  
-        max-width: 400px;  
+        width: 100%;
+        max-width: 400px;
         align-content: center;
         align-items: center;
     }
 
     .left p {
-        height: auto; 
+        display: none;
+    }
+
+    .right p {
+        text-align: center;
+    }
+
+    .left img {
+        height: 110px;
+        margin: -28px;
+        margin-bottom: -5px;
     }
 }
