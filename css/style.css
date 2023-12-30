@@ -87,6 +87,10 @@ form input {
     transition: color 0.3s;
 }
 
+form input::placeholder {
+    color: #918e8e;
+}
+
 .form-input-focused::placeholder {
     color: #d1d1d1;
 }
@@ -150,11 +154,21 @@ form input:focus {
 
 .right p {
     border-top: none;
-    color: #1c1e21;
+    color: #1c211c;
     font-size: 14px;
     font-weight: normal;
     padding-top: 15px;
     text-align: center;
+}
+
+.right p a {
+    color: #1c211c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right p a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 650px) {
